@@ -85,8 +85,8 @@ p {
 
 /*Class Selector to set all the elements inside of the class to float to the right */
 .float-right {
-  float: right;
-  margin-left: 25px;
+    float: right;
+    margin-left: 25px;
 }
 
 /*Class Selecto to set styles for the content class*/

@@ -1,200 +1,221 @@
+/*universal selector to set styles for all elements */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+/*background color for all the body elements */
 body {
-    background-color: #d9dcd6;
+  background-color: #d9dcd6;
 }
 
+/*Class Selector to set styles for the header[title of the webpage*/
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
 }
 
+/*Class selector to set style for the header and h1*/
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+  display: inline-block;
+  font-size: 48px;
 }
 
-.header h1 .seo {
-    color: #d9dcd6;
+/*Id selector to set a style for seo id */
+/*eliminate classes in front because seo is a unique id*/
+#seo {
+  color: #d9dcd6;
 }
 
+/*Class Selector to set style for the div that is inside of the header class*/
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
+
+/*Element seletor for unlisted elements to set a style*/
+/*Elimited a class in front because I only have one set of ul*/
+ul {
+  list-style-type: none;
 }
 
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
+
+/*Element selector for listed items to set styles*/
+/*Elimited classes in front because I only have one set of li*/
+li {
+  display: inline-block;
+  margin-left: 25px;
 }
 
+/* Element selector for links to set styles*/
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
+/*Element selector for paragraphs to set a style*/
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
+
+/*Class selector to set a style and add a background image between class hero and class content */
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
+/*Class Selector to set the elements inside of the class to float to the left */
 .float-left {
-    float: left;
-    margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
 
+/*Class Selector to set all the elements inside of the class to float to the right */
 .float-right {
-    float: right;
-    margin-left: 25px;
+  float: right;
+  margin-left: 25px;
 }
 
+/*Class Selecto to set styles for the content class*/
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
 }
 
+/*Class Selector to set styles for the benefits class*/
+/*Group other classes together that share the same style*/
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2589bd;
+  margin-bottom: 32px;
+  color: #ffffff;
 }
+ 
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/*Class Selector to set styles for h3 attritube within benefits class*/
+/*Group other classes together that share the same styles*/
+.benefits h3 {
     margin-bottom: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+/*Class Selector to set styles for images within benefits class*/
+/*Group other classes together that share the same styles*/
+.benefits img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/*Class Selector to set styles for div class inside of the content class*/
+/*Eliminate unnessary classes and group other classes together that share the same styles*/
+.content div  {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+/*
+.search-engine-optimization {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 
 .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
 
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
 }
+*/
 
+/*Class Selector to set up image size for the images inside of content class*/
+.content img{
+     max-height: 200px;
+}
+/*
 .search-engine-optimization img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
 .online-reputation-management img {
-    max-height: 200px;
+  max-height: 200px;
 }
 
 .social-media-marketing img {
-    max-height: 200px;
+  max-height: 200px;
 }
+*/
 
+/*Class Selector to set styles for h2 inside of the content class*/
+.content h2{
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+/*
 .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
 .social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
+*/
 
+/*Class Selector for footer to set styles*/
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
+/*Class Selector for h2 inside of the footer to set styles.*/
 .footer h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
